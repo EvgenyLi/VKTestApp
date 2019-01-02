@@ -19,6 +19,11 @@ class ViewController: UIViewController {
         addTargets()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     private func addTargets() {
         loginInButton.addTarget(self, action: #selector(signInAction), for: .touchUpInside)
         registrationButton.addTarget(self, action: #selector(signUpAction), for: .touchUpInside)
@@ -28,7 +33,7 @@ class ViewController: UIViewController {
         
     }
     @objc private func signUpAction() {
-        
+        StartRouter.shared.goToRegistrationScreen(from: self)
     }
 
 

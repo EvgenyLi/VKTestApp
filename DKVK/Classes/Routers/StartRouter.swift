@@ -6,8 +6,14 @@
 //  Copyright © 2019 Евгений Липадат. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 final class StartRouter {
+    static let shared = StartRouter()
+    private init() {}
+     func goToRegistrationScreen(from source: UIViewController) {
+        let vc = RegistrationViewController()
+        source.navigationController?.pushViewController(vc, animated: true)
+    }
     
 }

@@ -17,6 +17,13 @@
 		282BE3EE21DC213500E5E7AD /* StartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BE3ED21DC213500E5E7AD /* StartRouter.swift */; };
 		282BE3F721DC232100E5E7AD /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BE3F521DC232100E5E7AD /* RegistrationViewController.swift */; };
 		282BE3F821DC232100E5E7AD /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 282BE3F621DC232100E5E7AD /* RegistrationViewController.xib */; };
+		282BE3FC21DC255300E5E7AD /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BE3FB21DC255300E5E7AD /* PhotoView.swift */; };
+		282BE40221DC273300E5E7AD /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BE40121DC273300E5E7AD /* NibLoadable.swift */; };
+		28A1D1CD21DD3B8C0036A996 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A1D1CC21DD3B8C0036A996 /* Extension+UIView.swift */; };
+		28A1D1D121DD45750036A996 /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A1D1CF21DD45750036A996 /* UserInfoTableViewCell.swift */; };
+		28A1D1D221DD45750036A996 /* UserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28A1D1D021DD45750036A996 /* UserInfoTableViewCell.xib */; };
+		28A1D1D521DD523C0036A996 /* HeightConteiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A1D1D421DD523C0036A996 /* HeightConteiable.swift */; };
+		28A1D1D721DD52F20036A996 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A1D1D621DD52F20036A996 /* Typealias.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		282BE3ED21DC213500E5E7AD /* StartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRouter.swift; sourceTree = "<group>"; };
 		282BE3F521DC232100E5E7AD /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		282BE3F621DC232100E5E7AD /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
+		282BE3FB21DC255300E5E7AD /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		282BE40121DC273300E5E7AD /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		28A1D1CC21DD3B8C0036A996 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		28A1D1CF21DD45750036A996 /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
+		28A1D1D021DD45750036A996 /* UserInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoTableViewCell.xib; sourceTree = "<group>"; };
+		28A1D1D421DD523C0036A996 /* HeightConteiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightConteiable.swift; sourceTree = "<group>"; };
+		28A1D1D621DD52F20036A996 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +118,12 @@
 			isa = PBXGroup;
 			children = (
 				282BE3C421DC01BE00E5E7AD /* AppDelegate.swift */,
-				282BE3EA21DC089200E5E7AD /* Routers */,
+				28A1D1D321DD4EDC0036A996 /* Models */,
+				28A1D1CB21DD3B750036A996 /* Extensions */,
+				282BE3FF21DC270100E5E7AD /* Protocols */,
 				282BE3E821DC085D00E5E7AD /* Screens */,
+				282BE3EA21DC089200E5E7AD /* Routers */,
+				282BE3F921DC24EA00E5E7AD /* Custom View */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -154,6 +172,57 @@
 				282BE3F621DC232100E5E7AD /* RegistrationViewController.xib */,
 			);
 			path = Registration;
+			sourceTree = "<group>";
+		};
+		282BE3F921DC24EA00E5E7AD /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				28A1D1CE21DD452D0036A996 /* Cells */,
+				282BE3FA21DC252500E5E7AD /* AddPhotoView */,
+			);
+			path = "Custom View";
+			sourceTree = "<group>";
+		};
+		282BE3FA21DC252500E5E7AD /* AddPhotoView */ = {
+			isa = PBXGroup;
+			children = (
+				282BE3FB21DC255300E5E7AD /* PhotoView.swift */,
+			);
+			path = AddPhotoView;
+			sourceTree = "<group>";
+		};
+		282BE3FF21DC270100E5E7AD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				282BE40121DC273300E5E7AD /* NibLoadable.swift */,
+				28A1D1D421DD523C0036A996 /* HeightConteiable.swift */,
+				28A1D1D621DD52F20036A996 /* Typealias.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		28A1D1CB21DD3B750036A996 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				28A1D1CC21DD3B8C0036A996 /* Extension+UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		28A1D1CE21DD452D0036A996 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				28A1D1CF21DD45750036A996 /* UserInfoTableViewCell.swift */,
+				28A1D1D021DD45750036A996 /* UserInfoTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		28A1D1D321DD4EDC0036A996 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +309,7 @@
 				282BE3CF21DC01C000E5E7AD /* LaunchScreen.storyboard in Resources */,
 				282BE3F821DC232100E5E7AD /* RegistrationViewController.xib in Resources */,
 				282BE3E521DC044100E5E7AD /* ViewController.xib in Resources */,
+				28A1D1D221DD45750036A996 /* UserInfoTableViewCell.xib in Resources */,
 				282BE3CC21DC01C000E5E7AD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +329,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				282BE3C721DC01BE00E5E7AD /* ViewController.swift in Sources */,
+				28A1D1D721DD52F20036A996 /* Typealias.swift in Sources */,
 				282BE3EC21DC08FC00E5E7AD /* Router.swift in Sources */,
+				28A1D1CD21DD3B8C0036A996 /* Extension+UIView.swift in Sources */,
+				28A1D1D121DD45750036A996 /* UserInfoTableViewCell.swift in Sources */,
+				282BE40221DC273300E5E7AD /* NibLoadable.swift in Sources */,
 				282BE3C521DC01BE00E5E7AD /* AppDelegate.swift in Sources */,
+				28A1D1D521DD523C0036A996 /* HeightConteiable.swift in Sources */,
+				282BE3FC21DC255300E5E7AD /* PhotoView.swift in Sources */,
 				282BE3EE21DC213500E5E7AD /* StartRouter.swift in Sources */,
 				282BE3F721DC232100E5E7AD /* RegistrationViewController.swift in Sources */,
 			);
