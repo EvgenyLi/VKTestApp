@@ -9,3 +9,4 @@
 import Foundation
 
 typealias StaticCellProtocol = NibLoadable & HeightConteinable
+typealias ItemClouser<T> = ((T) -> Void)

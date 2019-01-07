@@ -11,5 +11,6 @@ import UIKit
 extension UIView {
      func round() {
         layer.cornerRadius = frame.height / 2
+        clipsToBounds = true
     }
 }
